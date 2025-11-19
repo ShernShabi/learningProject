@@ -23,6 +23,25 @@ const config: Config = {
         "grid-pattern":
           "radial-gradient(circle at center, rgba(107,114,128,0.12) 0, rgba(255,255,255,0) 60%)",
       },
+      keyframes: {
+        float1: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-8px)" },
+        },
+        float2: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(6px)" },
+        },
+        float3: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-4px)" },
+        },
+      },
+      animation: {
+        float1: "float1 11s ease-in-out infinite",
+        float2: "float2 13s ease-in-out infinite",
+        float3: "float3 15s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
